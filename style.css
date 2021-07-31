@@ -43,11 +43,12 @@ body {
 
 .container-form-input {
     background: transparent;
-    border: 0;
+    border: none;
     border-bottom: solid 2px white;
-    width: 90%;
+    width: 100%;
     color: white;
     font-size: 16px;
+    border-radius: 0px;
 }
 
 .container-form-input::placeholder {
@@ -65,7 +66,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(0px, -15px);
+    transform: translate(0px, -20px);
     background-color: white;
     border: 0;
     border-radius: 10px 10px 10px 0px;
