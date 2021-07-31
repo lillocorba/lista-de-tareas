@@ -11,6 +11,7 @@ formulario.addEventListener('submit', (e) => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
+
     if (localStorage.getItem('tareas')) {
         tareas = JSON.parse(localStorage.getItem('tareas'))
     }
@@ -55,6 +56,16 @@ const pintarTareas = () => {
     /* Guardamos las tareas en el localStorage */
 
     localStorage.setItem('tareas', JSON.stringify(tareas))
+
+    if (Object.values(tareas).length === 0) {
+
+        listaTareas.innerHTML = `
+        <div class="animate__animated animate__fadeInUp container-no-tareas">
+            <p>¡No tenes tareas pendientes! 💪🏻</p>
+        </div>`
+
+        return
+    }
 
     /* Limpiamos el DOM */
 
