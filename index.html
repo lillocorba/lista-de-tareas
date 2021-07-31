@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas ✅</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-contenido"">
+            <h1 class=" container-titulo">Lista de <br> Tareas</h1>
+            <form class="container-form" id="formulario">
+                <input type="text" name="" id="input" class="container-form-input" placeholder="Agregar tarea">
+                <button class="container-form-btn" type="submit">+</button>
+            </form>
+            <div class="container-tareas" id="lista-tareas">
+            </div>
+            <div class="container-desarrollo">
+                <p class="desarrollo-p">Desarrollado por <span class="desarrollo-p-nombre">Agustin Corbalan</span></p>
+            </div>
+        </div>
+    </div>
+    <template id="template">
+        <div class="tarea">
+            <p class="tarea-p">Tarea uno</p>
+            <div class="container-tareas-iconos">
+                <i class="fas fa-check-circle tarea-check"></i>
+                <i class="fas fa-minus tarea-minus"></i>
+            </div>
+        </div>
+    </template>
+    <script src="app.js"></script>
+</body>
+
+</html>

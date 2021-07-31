@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+    --naranja: rgba(250, 120, 84, 1);
+    --naranja-claro: rgba(255, 156, 106, 1);
+}
+
+html {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(250, 120, 84);
+    background: linear-gradient(140deg, rgba(250, 120, 84, 1) 0%, rgba(255, 156, 106, 1) 100%);
+    font-family: 'Oxygen', sans-serif;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.container-titulo {
+    color: white;
+    font-size: 42px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.container-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form-input {
+    background: transparent;
+    border: 0;
+    border-bottom: solid 2px white;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+.container-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.486);
+    font-weight: 300;
+    transform: translate(0px, -3px);
+}
+
+.container-form-input:active,
+.container-form-input:focus {
+    outline: none;
+}
+
+.container-form-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0px, -25px);
+    background-color: white;
+    border: 0;
+    border-radius: 10px 10px 10px 0px;
+    padding: 5px 12px;
+    color: #FA7854;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-tareas {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+.tarea {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: (0px 0px 10px rgba(255, 255, 255, 0.5));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tarea-complete {
+    background-color: var(--naranja-claro);
+}
+
+.tarea-p {
+    color: var(--naranja);
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.tarea-p-complete {
+    text-decoration: line-through;
+    color: white;
+}
+
+.container-tareas-iconos {
+    margin-right: 20px;
+}
+
+.tarea-check {
+    color: var(--naranja);
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tarea-minus {
+    color: var(--naranja-claro);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fa-undo-alt {
+    color: white;
+}
+
+.tarea-check-complete,
+.tarea-minus-complete {
+    color: white;
+}
+
+.container-desarrollo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.desarrollo-p {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+
+.desarrollo-p span {
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+
+    html {
+        position: relative;
+        overflow: auto;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: rgb(250, 120, 84);
+        background: linear-gradient(140deg, rgba(250, 120, 84, 1) 0%, rgba(255, 156, 106, 1) 100%);
+        font-family: 'Oxygen', sans-serif;
+        display: flex;
+        padding: 50px 100px;
+        min-height: 100vh;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px;
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0px 0px 20px #FA7854;
+        backdrop-filter: blur(20px);
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-contenido {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container-titulo {
+        color: white;
+        font-size: 52px;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+
+    .container-form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .container-form-input {
+        background: transparent;
+        border: 0;
+        border-bottom: solid 2px white;
+        width: 100%;
+        color: white;
+        font-size: 16px;
+    }
+
+    .container-form-input::placeholder {
+        color: rgba(255, 255, 255, 0.486);
+        font-weight: 300;
+        transform: translate(0px, -3px);
+    }
+
+    .container-form-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0px, -25px);
+        background-color: white;
+        border: 0;
+        border-radius: 10px 10px 10px 0px;
+        padding: 5px 12px;
+        color: #FA7854;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .container-tareas {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+
+    .tarea {
+        width: 100%;
+        height: 75px;
+        background-color: white;
+        box-shadow: (0px 0px 10px rgba(255, 255, 255, 0.5));
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .tarea-complete {
+        background-color: var(--naranja);
+    }
+
+    .tarea-p {
+        color: var(--naranja);
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    .tarea-p-complete {
+        text-decoration: line-through;
+        color: white;
+    }
+
+    .container-tareas-iconos {
+        margin-right: 30px;
+    }
+
+    .tarea-check {
+        color: var(--naranja);
+        font-size: 32px;
+        margin-right: 15px;
+    }
+
+    .tarea-minus {
+        color: var(--naranja-claro);
+        font-size: 32px;
+    }
+
+    .tarea-check-complete,
+    .tarea-minus-complete {
+        color: white;
+    }
+
+    .fa-undo-alt {
+        color: white;
+    }
+
+    .container-desarrollo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .desarrollo-p {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 50px;
+    }
+
+    .desarrollo-p span {
+        font-weight: bold;
+    }
+}
