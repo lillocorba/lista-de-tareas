@@ -26,7 +26,7 @@ const setTarea = e => {
     /* Validación formulario */
 
     if (input.value.trim() === '') {
-        console.log('Debes escribir algo!')
+        return
     }
 
     /* Construimos nuestro objeto */

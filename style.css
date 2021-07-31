@@ -47,7 +47,7 @@ body {
     border-bottom: solid 2px white;
     width: 100%;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 0px;
 }
 
@@ -101,7 +101,7 @@ body {
 
 .tarea-p {
     color: var(--naranja);
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 20px;
 }
 
@@ -216,13 +216,14 @@ body {
         border-bottom: solid 2px white;
         width: 100%;
         color: white;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .container-form-input::placeholder {
         color: rgba(255, 255, 255, 0.486);
         font-weight: 300;
         transform: translate(0px, -3px);
+        font-size: 20px;
     }
 
     .container-form-btn {
@@ -263,7 +264,7 @@ body {
 
     .tarea-p {
         color: var(--naranja);
-        font-size: 18px;
+        font-size: 20px;
         margin-left: 30px;
     }
 
